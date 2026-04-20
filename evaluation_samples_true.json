@@ -1,0 +1,99 @@
+[
+  {
+    "query": "RAG系统中的embedding模型有什么作用？",
+    "context": [
+      "Embedding模型用于将文本转化为向量表示",
+      "向量可以用于相似度计算",
+      "RAG系统依赖向量检索相关文档",
+      "短期记忆中存储最近对话内容",
+      "长期记忆中存储用户历史偏好",
+      "向量数据库如Qdrant用于存储embedding"
+    ],
+    "generated_answer": "Embedding模型用于将文本转换为向量",
+    "reference_answer": "Embedding模型用于将文本转换为向量以支持相似度搜索"
+  },
+  {
+    "query": "precision和recall有什么区别？",
+    "context": [
+      "Precision表示预测为正的样本中有多少是真的正",
+      "Recall表示真实正样本中有多少被预测出来",
+      "二者是分类任务的重要评估指标",
+      "短期记忆包含最近计算结果",
+      "长期记忆包含历史评估经验"
+    ],
+    "generated_answer": "Precision关注预测的准确性，Recall关注覆盖率",
+    "reference_answer": "Precision衡量预测正例的准确性，Recall衡量正例的召回率"
+  },
+  {
+    "query": "什么是RAG系统？",
+    "context": [
+      "RAG是Retrieval-Augmented Generation的缩写",
+      "结合检索和生成模型",
+      "通过外部知识增强生成效果",
+      "短期记忆用于上下文保持",
+      "长期记忆用于用户建模"
+    ],
+    "generated_answer": "RAG是一种结合检索和生成的模型架构",
+    "reference_answer": "RAG是通过检索外部知识来增强生成能力的模型架构"
+  },
+  {
+    "query": "F1 Score如何计算？",
+    "context": [
+      "F1是Precision和Recall的调和平均",
+      "公式为2 * (P * R) / (P + R)",
+      "用于平衡precision和recall",
+      "短期记忆记录当前计算",
+      "长期记忆存储历史模型表现"
+    ],
+    "generated_answer": "F1 Score是调和平均",
+    "reference_answer": "F1 Score通过2PR/(P+R)计算，是precision和recall的调和平均"
+  },
+  {
+    "query": "向量数据库的作用是什么？",
+    "context": [
+      "向量数据库用于存储高维向量",
+      "支持快速相似度搜索",
+      "常见有Qdrant和FAISS",
+      "短期记忆用于缓存查询结果",
+      "长期记忆用于用户行为分析"
+    ],
+    "generated_answer": "用于存储向量并进行相似度检索",
+    "reference_answer": "向量数据库用于高效存储向量并执行相似度搜索"
+  },
+  {
+    "query": "为什么RAG需要reranker？",
+    "context": [
+      "初步检索结果可能不够精确",
+      "Reranker用于重新排序结果",
+      "提高最终输入给LLM的质量",
+      "短期记忆存储当前候选结果",
+      "长期记忆记录用户偏好"
+    ],
+    "generated_answer": "Reranker用于检索结果排序",
+    "reference_answer": "Reranker通过重新排序提高检索结果质量"
+  },
+  {
+    "query": "LLM在RAG系统中的作用是什么？",
+    "context": [
+      "LLM负责生成最终答案",
+      "结合检索到的上下文进行生成",
+      "如GPT等模型",
+      "短期记忆提供上下文连续性",
+      "长期记忆提供个性化信息"
+    ],
+    "generated_answer": "LLM生成答案",
+    "reference_answer": "LLM利用检索内容生成最终回答"
+  },
+  {
+    "query": "短期记忆和长期记忆的区别是什么？",
+    "context": [
+      "短期记忆保存当前对话内容",
+      "长期记忆保存历史信息",
+      "短期记忆更新频繁",
+      "长期记忆用于长期建模",
+      "RAG系统可以结合两者"
+    ],
+    "generated_answer": "短期记忆用于当前对话，长期记忆用于历史信息",
+    "reference_answer": "短期记忆处理当前上下文，长期记忆存储长期用户数据"
+  }
+]
